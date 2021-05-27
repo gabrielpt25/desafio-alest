@@ -1,0 +1,39 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Camisa 1",
+      "price": 19.99
+    },
+    {
+      "id": 2,
+      "name": "Camisa",
+      "price": 9.99
+    },
+    {
+      "id": 3,
+      "name": "Camisa 7",
+      "price": 1.99
+    },
+    {
+      "name": "camisa 10",
+      "price": "3.99",
+      "id": 4
+    },
+    {
+      "name": "camisa 12",
+      "price": "5.99",
+      "id": 5
+    },
+    {
+      "name": "camisa 15",
+      "price": "3.99",
+      "id": 6
+    },
+    {
+      "name": "camisa 33",
+      "price": "79.99",
+      "id": 7
+    }
+  ]
+}

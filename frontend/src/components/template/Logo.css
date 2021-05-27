@@ -1,0 +1,15 @@
+aside.logo {
+    background-color: #6c519b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* apontando para a tag img*/
+
+aside.logo img {
+    padding: 0px 10px;
+    /* horizontal */
+    width: 100%;
+    /* máximo da área que pode usar*/
+}
