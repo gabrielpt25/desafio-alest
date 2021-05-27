@@ -64,23 +64,24 @@ export default class ProductCrud extends Component {
         return (
             <div className="form">
                 <div className="row">
-                    <div className="col-12 col-md-6"> {/* se for celular ocupa 12 colunas, se for tela grande ocupa as 6 colunas*/}
+                    <div className="col-12 col-md-6"> 
                         <div className="form-group">
-                            <label>Nome</label>
-                            <input type="text" className="form-control" name="name"
+                            <label>Nome Produto</label>
+                            <input type="text" className="form-control" 
+                                name="name"
                                 value={this.state.product.name}
-                                onChange={k => this.updateField(k)}
+                                onChange={e => this.updateField(e)}
                                 placeholder="Informe o nome" />
                         </div>
                     </div>
 
                     <div className="col-12 col-md-6">
-
-                        <div className="form-group">
+                            <div className="form-group">
                             <label>Preço</label>
-                            <input type="text" className="form-control" name="price"
+                            <input type="text" className="form-control" 
+                                name="price"
                                 value={this.state.product.price}
-                                onChange={k => this.updateField(k)}
+                                onChange={e => this.updateField(e)}
                                 placeholder="Informe o preço" />
                         </div>
 
@@ -91,10 +92,10 @@ export default class ProductCrud extends Component {
                 <hr />
 
                 <div className="cold-12 d-flex justify-content-end">
-                    <button className="btn btn-primary" onClick={k => this.save(k)}>
+                    <button className="btn btn-primary" onClick={e => this.save(e)}>
                         Salvar
                     </button>
-                    <button className="btn btn-Secundary ml-4" onClick={k => this.clear(k)}>
+                    <button className="btn btn-Secundary ml-4" onClick={e => this.clear(e)}>
                         Cancelar
                     </button>
                 </div>
@@ -131,7 +132,7 @@ export default class ProductCrud extends Component {
                     </tr>
                 </thead>
                 <tbody>
-                    {this.renderRows}
+                    {this.renderRows()}
                 </tbody>
             </table>
         )
@@ -161,7 +162,6 @@ export default class ProductCrud extends Component {
     }
 
     render() {
-        console.log(this.state.list)
         return (
             <Main {...headerProps}>
                 {this.renderForm()}
